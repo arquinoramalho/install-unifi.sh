@@ -172,7 +172,7 @@ echo " done."
 # If partition size is < 4GB, add smallfiles option to mongodb
 echo -n "Checking partition size..."
 if [ `df -k | awk '$NF=="/"{print $2}'` -le 4194302 ]; then
-	echo -e "\unifi.db.extraargs=--smallfiles\n" >> /usr/local/UniFi/data/system.properties
+	echo -e "unifi.db.extraargs=--smallfiles" >> /usr/local/UniFi/data/system.properties
 fi
 echo " done."
 
