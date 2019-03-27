@@ -4,10 +4,10 @@
 # Installs the Uni-Fi controller software on a FreeBSD machine (presumably running pfSense).
 
 # The latest version of UniFi:
-UNIFI_SOFTWARE_URL="http://dl.ubnt.com/unifi/5.10.19/UniFi.unix.zip"
+UNIFI_SOFTWARE_URL="http://dl.ubnt.com/unifi/5.10.20/UniFi.unix.zip"
 
 # The rc script associated with this branch or fork:
-RC_SCRIPT_URL="https://raw.githubusercontent.com/gozoinks/unifi-pfsense/master/rc.d/unifi.sh"
+RC_SCRIPT_URL="https://github.com/arquinoramalho/install-unifi.sh/edit/master/install-unifi/install-unifi.sh"
 
 
 # If pkg-ng is not yet installed, bootstrap it:
@@ -172,7 +172,7 @@ echo " done."
 # If partition size is < 4GB, add smallfiles option to mongodb
 echo -n "Checking partition size..."
 if [ `df -k | awk '$NF=="/"{print $2}'` -le 4194302 ]; then
-	echo -e "unifi.db.extraargs=--smallfiles" >> /usr/local/UniFi/data/system.properties
+	echo -e "\nunifi.db.extraargs=--smallfiles\n" >> /usr/local/UniFi/data/system.properties
 fi
 echo " done."
 
