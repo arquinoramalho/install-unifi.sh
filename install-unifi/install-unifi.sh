@@ -7,7 +7,7 @@
 UNIFI_SOFTWARE_URL="http://dl.ubnt.com/unifi/5.10.20/UniFi.unix.zip"
 
 # The rc script associated with this branch or fork:
-RC_SCRIPT_URL="https://github.com/arquinoramalho/install-unifi.sh/edit/master/install-unifi/install-unifi.sh"
+RC_SCRIPT_URL="https://raw.githubusercontent.com/arquinoramalho/install-unifi.sh/master/install-unifi/install-unifi.sh"
 
 
 # If pkg-ng is not yet installed, bootstrap it:
